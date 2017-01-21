@@ -25,20 +25,27 @@ public class GameMode : MonoBehaviour {
 	}
 
 	void Update(){
+		
+		textJ1.text = "Score j1 : " + pointJ1;
+		textJ2.text = "Score j2 : " + pointJ2;
+
+	}
+
+	public void ResetAfterScoring(){
 
 		if (pointEnCour <= (pointJ1 + pointJ2)) {
 			GameObject.Find ("Character1").transform.position = spawnPointJ1;
 			GameObject.Find ("Character2").transform.position = spawnPointJ2;
 
 			if(GameObject.FindGameObjectWithTag ("Joueur1")){				
-			for (int i = 0; i < GameObject.FindGameObjectsWithTag ("Joueur1").Length; i++) {
+				for (int i = 0; i < GameObject.FindGameObjectsWithTag ("Joueur1").Length; i++) {
 					if (GameObject.FindGameObjectsWithTag ("Joueur1") [i].name != "Character1") {
 						Destroy (GameObject.FindGameObjectsWithTag ("Joueur1") [i].gameObject);
 					}
 				}
 			}
 			if(GameObject.FindGameObjectWithTag ("Joueur2")){				
-			for (int i = 0; i < GameObject.FindGameObjectsWithTag ("Joueur2").Length; i++) {
+				for (int i = 0; i < GameObject.FindGameObjectsWithTag ("Joueur2").Length; i++) {
 					if (GameObject.FindGameObjectsWithTag ("Joueur2") [i].name != "Character2") {
 						Destroy (GameObject.FindGameObjectsWithTag ("Joueur2") [i].gameObject);
 					}
@@ -49,12 +56,11 @@ public class GameMode : MonoBehaviour {
 			pointEnCour++;
 		}
 
-		textJ1.text = "Score j1 : " + pointJ1;
-		textJ2.text = "Score j2 : " + pointJ2;
-
-
-
 	}
+
+
+
+
 
 
 

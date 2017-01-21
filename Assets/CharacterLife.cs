@@ -46,9 +46,11 @@ public class CharacterLife : MonoBehaviour {
 		if (life <= 0) {
 			if(GetComponent<CharacterContoller>().player == 1){
 				gameMode.pointJ2++;
+				gameMode.ResetAfterScoring ();
 			}
 			if(GetComponent<CharacterContoller>().player == 2){
 				gameMode.pointJ1++;
+				gameMode.ResetAfterScoring ();
 			}
 		}
 		
