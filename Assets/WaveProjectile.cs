@@ -12,7 +12,11 @@ public class WaveProjectile : MonoBehaviour {
 
 	new Rigidbody rigidbody;
 
+	float timer = 0.35f;
+
 	/* State */
+
+	Vector3 currentDirection;
 
 	/// Collider of the last wall hit by this projectile
 	Collider lastWallHit;
@@ -30,8 +34,19 @@ public class WaveProjectile : MonoBehaviour {
 
 	public void Shoot (Vector3 spawnPosition, Vector2 direction) {
 		transform.position = spawnPosition;
-		rigidbody.velocity = direction.normalized * speed;
-		AlignWithDirection(rigidbody.velocity);
+		currentDirection = direction.normalized;
+		rigidbody.velocity = currentDirection * speed;
+		AlignWithDirection();
+	}
+
+	void FixedUpdate(){
+
+		timer -= Time.deltaTime;
+		if (timer <= 0) {
+			timer = 0.35f;
+			GameObject creation = Instantiate (Resources.Load<GameObject> ("GGJ_projectile3G"), transform.position,transform.rotation);
+		}
+
 	}
 
 	void OnCollisionEnter(Collision col) {
@@ -65,9 +80,9 @@ public class WaveProjectile : MonoBehaviour {
 			Vector2 v = VectorUtil.ProjectParallel(- col.relativeVelocity, normal);    // along normal
 			Vector3 newVelocity = (Vector3) (u - v);
 			rigidbody.velocity = newVelocity;
-
+			currentDirection = newVelocity.normalized;
 			// align object with new velocity
-			AlignWithDirection(newVelocity);
+			AlignWithDirection();
 		}
 
 		if (col.gameObject.tag != "Untagged" && col.gameObject.tag != "Wall") {
@@ -76,17 +91,19 @@ public class WaveProjectile : MonoBehaviour {
 				col.gameObject.GetComponent<CharacterLife> ().life--;
 				Destroy (this.gameObject);
 			}
+		}if (col.gameObject.tag == "DeadZone") {
+			Destroy (this.gameObject);
 		}
 	}
 
-	void AlignWithDirection(Vector3 direction) {
+	void AlignWithDirection() {
 //		rigidbody.rotation = Quaternion.FromToRotation(Vector3.right, direction);  // 1 frame late
-		transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
+		transform.rotation = Quaternion.FromToRotation(Vector3.right, currentDirection);
 	}
 
 	void DecrementBounces () {
 		bounces--;
-		if (bounces <= 0) {
+		if (bounces < 0) {
 			Die();
 		}
 	}
@@ -96,12 +113,12 @@ public class WaveProjectile : MonoBehaviour {
 	}
 
 	public void SlowDown ()	{
-		speed /= 10f;
+		speed /= 3f;
 		rigidbody.velocity = rigidbody.velocity.normalized * speed;
 	}
 
 	public void SpeedUp () {
-		speed *= 10f;
+		speed *= 3f;
 		rigidbody.velocity = rigidbody.velocity.normalized * speed;
 	}
 
