@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterContoller : MonoBehaviour {
 
 	float speed = 6;
-	public int player = 0;
+	public int player = 1;
 	public float lastInput = 1;
 
 	// Use this for initialization
@@ -18,13 +18,13 @@ public class CharacterContoller : MonoBehaviour {
 
 		switch(player) {
 
-		case 0:
+		case 1:
 
-		if (Input.GetAxis("Vertical")<0){
+			if (Input.GetAxis ("VerticalManette1") < 0){
 
 			gameObject.transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x,transform.position.y-3,transform.position.z), speed*Time.deltaTime);
 				lastInput = -1;
-		} else if (Input.GetAxis("Vertical")>0){
+			} else if (Input.GetAxis ("VerticalManette1") > 0){
 
 			gameObject.transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x,transform.position.y+3,transform.position.z), speed*Time.deltaTime);
 				lastInput = 1;	
@@ -32,7 +32,7 @@ public class CharacterContoller : MonoBehaviour {
 			}
 		break;
 
-		case 1:
+		case 2:
 			
 			if (Input.GetAxis ("VerticalManette2") < 0) {
 

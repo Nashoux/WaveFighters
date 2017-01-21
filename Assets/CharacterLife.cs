@@ -18,10 +18,10 @@ public class CharacterLife : MonoBehaviour {
 	void Update () {
 
 		if (life <= 0) {
-			if(GetComponent<CharacterContoller>().player == 2){
+			if(GetComponent<CharacterContoller>().player == 1){
 				gameMode.pointJ2++;
 			}
-			if(GetComponent<CharacterContoller>().player == 1){
+			if(GetComponent<CharacterContoller>().player == 2){
 				gameMode.pointJ1++;
 			}
 		}

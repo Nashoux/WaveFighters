@@ -42,7 +42,7 @@ public class WaveProjectile : MonoBehaviour {
 				transform.position = new Vector3 (transform.position.x +0.4f, transform.position.y, transform.position.z);
 				transform.Rotate(new Vector3(0,0,-90));
 				if (col.contacts [0].point.y - transform.position.y > 0) {
-					left = false;
+					left = true;
 				}if (col.contacts [0].point.y - transform.position.y < 0) {
 					left = false;
 				}			
