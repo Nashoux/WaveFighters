@@ -35,7 +35,6 @@ public class Shoot : MonoBehaviour {
 				tirsInputs [2] = tirsInputs [1];
 				tirsInputs [1] = tirsInputs [0];
 				tirsInputs [0] = 2;
-
 			}
 
 			if ((Input.GetAxis ("shoot1") < 0 || Input.GetKeyDown(KeyCode.E)) && tirsInputs[2] != 0) {
