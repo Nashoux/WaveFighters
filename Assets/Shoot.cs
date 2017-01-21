@@ -24,7 +24,7 @@ public class Shoot : MonoBehaviour {
 		switch (characterController.player) {
 		case 1:
 
-			if (Input.GetKeyDown (KeyCode.A)) {
+			if (Input.GetAxis ("buton2") > 0) {
 
 				tirsInputs [2] = tirsInputs [1];
 				tirsInputs [1] = tirsInputs [0];
@@ -78,13 +78,13 @@ public class Shoot : MonoBehaviour {
 
 		case 2:
 
-			if (Input.GetAxis ("button2") < 0) {
+			if (Input.GetAxis ("buton2") > 0) {
 
 				tirsInputs [2] = tirsInputs [1];
 				tirsInputs [1] = tirsInputs [0];
 				tirsInputs [0] = 1;
 
-			}if (Input.GetAxis ("button2") < 0) {
+			}if (Input.GetAxis ("buton2") > 0) {
 
 				tirsInputs [2] = tirsInputs [1];
 				tirsInputs [1] = tirsInputs [0];
