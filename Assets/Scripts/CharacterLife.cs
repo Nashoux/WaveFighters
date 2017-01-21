@@ -7,18 +7,20 @@ public class CharacterLife : MonoBehaviour {
 
 	public float life = 3;
 
-	[SerializeField]
 	GameMode gameMode;
 
 	[SerializeField]
-	private Image image;
-
+	private Image healthBar;
 
 	float fillamount = 1;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+		gameMode = FindObjectOfType<GameMode>();
+		#if UNITY_EDITOR
+		if (gameMode == null) {
+			Debug.LogWarning("No Game Mode in the scene");
+		}
+		#endif
 	}
 	
 	// Update is called once per frame
@@ -27,28 +29,28 @@ public class CharacterLife : MonoBehaviour {
 		fillamount = 0.34f * life;
 
 		if (fillamount > 1) {
-			image.color = new Color (0.2f, 0.9f, 0.2f);
+			healthBar.color = new Color (0.2f, 0.9f, 0.2f);
 		}else if (fillamount > 0.5f) {
-			image.color = new Color (0.9f, 0.6f, 0.2f);
+			healthBar.color = new Color (0.9f, 0.6f, 0.2f);
 		}else if (fillamount > 0.2f) {
-			image.color = new Color (0.9f, 0.1f, 0.1f);
+			healthBar.color = new Color (0.9f, 0.1f, 0.1f);
 
 		}
 
 
-		image.fillAmount = fillamount;
+		healthBar.fillAmount = fillamount;
 
 
 		var wantedPos = Camera.main.WorldToScreenPoint (transform.position);
-		image.gameObject.transform.position = new Vector3 (wantedPos.x,wantedPos.y + 25 ,wantedPos.z) ;
+		healthBar.gameObject.transform.position = new Vector3 (wantedPos.x,wantedPos.y + 25 ,wantedPos.z) ;
 
 
 		if (life <= 0) {
-			if(GetComponent<CharacterContoller>().player == 1){
+			if(GetComponent<PlayerCharacterController>().player == 1){
 				gameMode.pointJ2++;
 				gameMode.ResetAfterScoring ();
 			}
-			if(GetComponent<CharacterContoller>().player == 2){
+			if(GetComponent<PlayerCharacterController>().player == 2){
 				gameMode.pointJ1++;
 				gameMode.ResetAfterScoring ();
 			}

@@ -519,6 +519,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Assets/Scripts/VectorUtil.cs",
+			"settings":
+			{
+				"buffer_size": 1254,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Shoot.cs",
+			"settings":
+			{
+				"buffer_size": 3097,
+				"encoding": "UTF-16 LE with BOM",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -784,10 +801,14 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Projects/Video Games/GGJ 2017 - WaveFighters"
+		"/F/Projects/Video Games/GGJ 2017 - WaveFighters",
+		"/F/Projects/Video Games/GGJ 2017 - WaveFighters/Assets"
 	],
 	"file_history":
 	[
+		"/F/Projects/Video Games/GGJ 2017 - WaveFighters/Assets/Prefabs/ScoreManager.prefab.meta",
+		"/F/Projects/Video Games/GGJ 2017 - WaveFighters/Assets/Scripts/CharacterLife.cs",
+		"/F/Projects/Video Games/GGJ 2017 - WaveFighters/Assets/WaveProjectile.cs",
 		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Locale/Editor/LocalizeTextInspector.cs",
 		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Locale/LocalizeText.cs",
 		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/uGUI/LocalizedText.cs",
@@ -912,10 +933,7 @@
 		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/Interactables/ToggleSwitch.cs",
 		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/Interactables/ToggleSwitchAstronaut.cs",
 		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Dynamic/Elevator.cs",
-		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Pattern/PoolManager.cs",
-		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/Editor/CustomInspectors/CustomInspector_External.cs",
-		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/Editor/CustomInspectors/InputManagerInspector.cs",
-		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/InputManager.cs"
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Pattern/PoolManager.cs"
 	],
 	"find":
 	{
@@ -944,6 +962,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Resources.Load<Sprite>",
 			"dotwee",
 			"RemoveLockTriggerCandidate",
 			"AddLockTriggerCandidate",
@@ -1070,8 +1089,7 @@
 			"jump",
 			"Jump",
 			"CrouchState",
-			"Crouch",
-			"CrouchedState"
+			"Crouch"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1093,8 +1111,266 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Assets/Scripts/VectorUtil.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										370,
+										371
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										337,
+										338
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_thread_running": true,
+							"ensure_single_trailing_newline": true,
+							"glsv_configured": true,
+							"glsv_enabled": 1,
+							"glsv_spec": 0,
+							"ignore_whitespace_on_current_line": true,
+							"ignore_whitespace_only_lines": false,
+							"open_with_edit": true,
+							"remove_trailing_whitespace_on_save": true,
+							"syntax": "Packages/SublimeUnityCSharp/Syntaxes/UnityC#.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/Shoot.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								839,
+								858
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										936,
+										937
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										838,
+										839
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"encoding_helper_encoding": "BINARY",
+							"encoding_thread_running": true,
+							"ensure_single_trailing_newline": true,
+							"glsv_configured": true,
+							"glsv_enabled": 1,
+							"glsv_spec": 0,
+							"ignore_whitespace_on_current_line": true,
+							"ignore_whitespace_only_lines": false,
+							"remove_trailing_whitespace_on_save": true,
+							"syntax": "Packages/SublimeUnityCSharp/Syntaxes/UnityC#.tmLanguage",
+							"syntax_mgr_loaded": true,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 471.0,
+						"translation.y": 445.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1150,6 +1426,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"scorema",
+				"Assets\\Prefabs\\ScoreManager.prefab.meta"
+			],
+			[
+				"shoot",
+				"Assets\\Scripts\\Shoot.cs"
+			],
 			[
 				"vecuti",
 				"Unity - Martian Coop\\Assets\\Commons\\Helper\\Util\\VectorUtil.cs"
@@ -1653,14 +1937,6 @@
 			[
 				"aliemotor",
 				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMotor.cs"
-			],
-			[
-				"aliencon",
-				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienControl.cs"
-			],
-			[
-				"aliplacon",
-				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienPlayerControl.cs"
 			]
 		],
 		"width": 0.0

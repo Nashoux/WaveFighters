@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class WaveProjectile : MonoBehaviour {
 
+	new Rigidbody rigidbody;
+
+	/* Spawn parameters */
+
 	/// Speed in m/s
 	float speed = 5;
 
 	/// Number of bounces remaining
 	float bounces = 2;
-
-	new Rigidbody rigidbody;
 
 	float timer = 0.35f;
 
@@ -44,7 +46,7 @@ public class WaveProjectile : MonoBehaviour {
 		timer -= Time.deltaTime;
 		if (timer <= 0) {
 			timer = 0.35f;
-			GameObject creation = Instantiate (Resources.Load<GameObject> ("GGJ_projectile3G"), transform.position,transform.rotation);
+			GameObject creation = Instantiate (Resources.Load<GameObject> ("Prefab/GGJ_projectile3G"), transform.position,transform.rotation);
 		}
 
 	}
