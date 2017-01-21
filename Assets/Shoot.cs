@@ -24,7 +24,7 @@ public class Shoot : MonoBehaviour {
 		switch (characterController.player) {
 		case 1:
 
-			if (Input.GetAxis ("buton2") > 0) {
+			if (Input.GetAxis ("buton2") > 0 || Input.GetKeyDown (KeyCode.A)) {
 
 				tirsInputs [2] = tirsInputs [1];
 				tirsInputs [1] = tirsInputs [0];
@@ -38,7 +38,7 @@ public class Shoot : MonoBehaviour {
 
 			}
 
-			if (Input.GetAxis ("shoot1") < 0 && tirsInputs[2] != 0) {
+			if ((Input.GetAxis ("shoot1") < 0 || Input.GetKeyDown(KeyCode.E)) && tirsInputs[2] != 0) {
 
 				GameObject created = Instantiate(Resources.Load<GameObject>("Projectile1"));
 				created.transform.position = new Vector3 (gameObject.transform.position.x + 3, gameObject.transform.position.y, created.transform.position.z);
