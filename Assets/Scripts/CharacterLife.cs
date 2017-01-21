@@ -22,7 +22,7 @@ public class CharacterLife : MonoBehaviour {
 		}
 		#endif
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -55,6 +55,6 @@ public class CharacterLife : MonoBehaviour {
 				gameMode.ResetAfterScoring ();
 			}
 		}
-		
+
 	}
 }
