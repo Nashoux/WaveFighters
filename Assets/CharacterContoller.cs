@@ -20,11 +20,11 @@ public class CharacterContoller : MonoBehaviour {
 
 		case 1:
 
-			if (Input.GetAxis ("VerticalManette1") < 0){
+			if (Input.GetAxis ("VerticalManette1") < 0 || Input.GetAxis ("Vertical") < 0){
 
 			gameObject.transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x,transform.position.y-3,transform.position.z), speed*Time.deltaTime);
 				lastInput = -1;
-			} else if (Input.GetAxis ("VerticalManette1") > 0){
+			} else if (Input.GetAxis ("VerticalManette1") > 0 || Input.GetAxis ("Vertical") > 0){
 
 			gameObject.transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x,transform.position.y+3,transform.position.z), speed*Time.deltaTime);
 				lastInput = 1;	
@@ -34,7 +34,7 @@ public class CharacterContoller : MonoBehaviour {
 
 		case 2:
 			
-			if (Input.GetAxis ("VerticalManette2") < 0) {
+			if (Input.GetAxis ("VerticalManette2") < 0 ) {
 
 				gameObject.transform.position = Vector3.MoveTowards (transform.position, new Vector3 (transform.position.x, transform.position.y - 3, transform.position.z), speed * Time.deltaTime);
 				lastInput = -1;
