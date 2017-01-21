@@ -1,0 +1,1971 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"loclkey",
+				"localizedKey"
+			],
+			[
+				"Update",
+				"UpdateText"
+			],
+			[
+				"Controller",
+				"ControllerHardwareType.XInput"
+			],
+			[
+				"span",
+				"spawnAstronaut"
+			],
+			[
+				"spawn",
+				"spawnAstronaut"
+			],
+			[
+				"AstroIn",
+				"AstronautInteractor"
+			],
+			[
+				"AStor",
+				"AstronautMaster"
+			],
+			[
+				"Chara",
+				"CharacterInteractor"
+			],
+			[
+				"astrona",
+				"astronautMotor"
+			],
+			[
+				"Smart",
+				"SmartLocalization"
+			],
+			[
+				"localized",
+				"localizedText"
+			],
+			[
+				"As",
+				"Astronaut"
+			],
+			[
+				"zIndex",
+				"m_ZIndex"
+			],
+			[
+				"Tool",
+				"Tooltip(\"Position"
+			],
+			[
+				"contin",
+				"continueCrouchIntention"
+			],
+			[
+				"mgroud",
+				"m_Grounded"
+			],
+			[
+				"Log",
+				"LogWarning"
+			],
+			[
+				"mrig",
+				"m_Rigidbody2D.velocity"
+			],
+			[
+				"mgroun",
+				"m_GroundSpeed"
+			],
+			[
+				"slpart",
+				"slaveParticle"
+			],
+			[
+				"slparti",
+				"slaveParticles"
+			],
+			[
+				"newVelo",
+				"newVelocityY"
+			],
+			[
+				"m_backwar",
+				"m_CrawlBackwardAccel"
+			],
+			[
+				"chann",
+				"channelIndex"
+			],
+			[
+				"control",
+				"control.continueCrouchIntention"
+			],
+			[
+				"contrc",
+				"continueCrouchIntention"
+			],
+			[
+				"logf",
+				"logfv\tDebug.LogFormat var"
+			],
+			[
+				"Too",
+				"Tooltip(\"Maximum"
+			],
+			[
+				"Asto",
+				"AstronautMotor"
+			],
+			[
+				"Camera",
+				"CameraScrolling"
+			],
+			[
+				"l",
+				"logfv\tDebug.LogFormat var"
+			],
+			[
+				"hasj",
+				"hasJustOpened"
+			],
+			[
+				"closeme",
+				"wantsToCloseMenu"
+			],
+			[
+				"want",
+				"wantsToOpenMenu"
+			],
+			[
+				"In",
+				"InGameManager"
+			],
+			[
+				"PauseM",
+				"PauseMenuUI"
+			],
+			[
+				"syste",
+				"systemPlayer.GetButtonDown(\"Close"
+			],
+			[
+				"Rse",
+				"Resume"
+			],
+			[
+				"insn",
+				"instantiateInWorldSpace"
+			],
+			[
+				"perman",
+				"permanentManagerParent"
+			],
+			[
+				"norma",
+				"normalized"
+			],
+			[
+				"sqr",
+				"sqrMagnitude"
+			],
+			[
+				"light",
+				"lightingDirectionIntentionVector"
+			],
+			[
+				"m_light",
+				"m_LightningModeLightFactor"
+			],
+			[
+				"m",
+				"m\tMethod"
+			],
+			[
+				"Abs",
+				"AbsSpeedX"
+			],
+			[
+				"vert",
+				"verticalAccel"
+			],
+			[
+				"maxsp",
+				"m_MaxSpeed"
+			],
+			[
+				"moveI",
+				"m_MoveIntentionVector"
+			],
+			[
+				"newVe",
+				"newVelocityX"
+			],
+			[
+				"forw",
+				"forwardAccel"
+			],
+			[
+				"AStro",
+				"AstronautControl"
+			],
+			[
+				"timefal",
+				"m_TimeBeforeAllowingClimb"
+			],
+			[
+				"m_Has",
+				"m_HasDetectedFall"
+			],
+			[
+				"Detect",
+				"DetectFall"
+			],
+			[
+				"m_timesin",
+				"m_TimeSinceDetectingFall"
+			],
+			[
+				"Snap",
+				"SnapRotationToCurrentDirection"
+			],
+			[
+				"Finis",
+				"FinishTurn180"
+			],
+			[
+				"Start",
+				"StartTurn180"
+			],
+			[
+				"turn",
+				"turnRatio"
+			],
+			[
+				"Hori",
+				"HorizontalDirection"
+			],
+			[
+				"Print",
+				"PrintVar"
+			],
+			[
+				"DebugScreen",
+				"DebugScreen.Print(1"
+			],
+			[
+				"gravityfa",
+				"m_FallGravityFactor"
+			],
+			[
+				"level",
+				"levelEvents"
+			],
+			[
+				"leve",
+				"levelEvents"
+			],
+			[
+				"AStron",
+				"AstronautMotor"
+			],
+			[
+				"rel",
+				"released"
+			],
+			[
+				"m_IS",
+				"m_IsIdle"
+			],
+			[
+				"Reac",
+				"OnReachedTargetLevel"
+			],
+			[
+				"m_Las",
+				"m_LastLevel"
+			],
+			[
+				"Trans",
+				"TransformPoint"
+			],
+			[
+				"Hide",
+				"HideInputHint"
+			],
+			[
+				"Debug",
+				"DebugScreen"
+			],
+			[
+				"detec",
+				"detectedInteractable"
+			],
+			[
+				"charac",
+				"characterType"
+			],
+			[
+				"DEb",
+				"DebugScreen"
+			],
+			[
+				"Astr",
+				"AstronautInteractor"
+			],
+			[
+				"Inter",
+				"Interact"
+			],
+			[
+				"Can",
+				"CheckCanInteract"
+			],
+			[
+				"insi",
+				"insideInteractableArea"
+			],
+			[
+				"LogWar",
+				"LogWarningFormat"
+			],
+			[
+				"Collider",
+				"Collider2D"
+			],
+			[
+				"Overlap",
+				"OverlapAreaDebug"
+			],
+			[
+				"handle",
+				"handles"
+			],
+			[
+				"chara",
+				"characterInteractor"
+			],
+			[
+				"Character",
+				"CharacterInteractor"
+			],
+			[
+				"m_De",
+				"m_DebugVariableDict"
+			],
+			[
+				"Lo",
+				"LogWarningFormat"
+			],
+			[
+				"for",
+				"for\tfor"
+			],
+			[
+				"vname",
+				"variableName"
+			],
+			[
+				"varia",
+				"variableName"
+			],
+			[
+				"vari",
+				"variableName"
+			],
+			[
+				"m_Debug",
+				"m_DebugVariables"
+			],
+			[
+				"close",
+				"closeGroundOnRight"
+			],
+			[
+				"Crumb",
+				"CrumblingCliff"
+			],
+			[
+				"Onas",
+				"OnAstronautLeave"
+			],
+			[
+				"Set",
+				"Setup"
+			],
+			[
+				"Nobo",
+				"OnNobodyStand"
+			],
+			[
+				"curre",
+				"currentRelativeHeight"
+			],
+			[
+				"press",
+				"pressedMotionHeight"
+			],
+			[
+				"Vec",
+				"Vector2"
+			],
+			[
+				"log",
+				"log\tDebug.Log"
+			],
+			[
+				"pressed",
+				"pressedDistance"
+			],
+			[
+				"rever",
+				"reverseToggle"
+			],
+			[
+				"OnAS",
+				"OnAstronautLand"
+			],
+			[
+				"Particle",
+				"ParticleSystem"
+			],
+			[
+				"To",
+				"Tooltip(\"Maximum"
+			],
+			[
+				"Game",
+				"GameObject"
+			],
+			[
+				"maxSP",
+				"maxSpanX"
+			],
+			[
+				"maxSp",
+				"maxSpanX"
+			],
+			[
+				"Recei",
+				"ReceiveDamage"
+			],
+			[
+				"value",
+				"valueContainerScript"
+			],
+			[
+				"Ali",
+				"AlienLight"
+			],
+			[
+				"swi",
+				"switch"
+			],
+			[
+				"DebugMenu",
+				"DebugMenuValueItem"
+			],
+			[
+				"Menu",
+				"MenuItem"
+			],
+			[
+				"game",
+				"gameObject"
+			],
+			[
+				"pause",
+				"pauseMenuUI"
+			],
+			[
+				"InGa",
+				"InGameManager.Instance"
+			],
+			[
+				"Curre",
+				"CurrentValue"
+			],
+			[
+				"Event",
+				"EventSystem"
+			],
+			[
+				"UnityE",
+				"UnityEvent"
+			],
+			[
+				"Unity",
+				"UnityEngine"
+			],
+			[
+				"names",
+				"namespace"
+			],
+			[
+				"abs",
+				"abstract"
+			],
+			[
+				"Master",
+				"MasterBehaviour"
+			],
+			[
+				"came",
+				"cameraScrolling"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"last_filter": "revea",
+		"selected_items":
+		[
+			[
+				"revea",
+				"File: Reveal"
+			],
+			[
+				"locate",
+				"File: Locate"
+			],
+			[
+				"rever",
+				"File: Revert"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"pac rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"reve",
+				"File: Reveal"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"loca",
+				"File: Locate"
+			],
+			[
+				"lin",
+				"Line Ending: Windows"
+			],
+			[
+				"pastr",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"pack en",
+				"Package Control: Enable Package"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"pac en",
+				"Package Control: Enable Package"
+			],
+			[
+				"pac e",
+				"Package Control: Enable Package"
+			],
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"proje",
+				"Project Manager"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"heaxa",
+				"Hex Viewer: Generate Hash"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"proj ma",
+				"Project Manager: Add Project"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"renae",
+				"File: Rename"
+			],
+			[
+				"subw",
+				"AutocompletionFuzzy: Complete subword forward"
+			],
+			[
+				"rev",
+				"File: Reveal"
+			],
+			[
+				"p",
+				"Package Control: Enable Package"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"console",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"tpra",
+				"Text Pastry: Menu"
+			],
+			[
+				"text pa",
+				"Text Pastry: Range"
+			],
+			[
+				"pac d",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack d",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack di",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"pac dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac di",
+				"Package Control: Disable Package"
+			],
+			[
+				"brack",
+				"BracketHighlighter: Wrap Selections with Brackets"
+			],
+			[
+				"sublieboo",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"subboo",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"book",
+				"Bookmarks: Toggle"
+			],
+			[
+				"pack e",
+				"Package Control: Enable Package"
+			],
+			[
+				"line",
+				"Line Ending: Unix"
+			],
+			[
+				"cop",
+				"File: Copy Path"
+			],
+			[
+				"exp",
+				"ExpandRegion"
+			],
+			[
+				"pack ",
+				"Package Control: Enable Package"
+			],
+			[
+				"fl",
+				"File: Locate"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 330.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Projects/Video Games/GGJ 2017 - WaveFighters"
+	],
+	"file_history":
+	[
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Locale/Editor/LocalizeTextInspector.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Locale/LocalizeText.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/uGUI/LocalizedText.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/DataManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/TutorialTrigger.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Build/DevelopmentStage.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Build/BuildData.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/ManagerGenerator.cs",
+		"/F/Projects/Video Games/Sonic 2D Tech demo/Assets/Game/Scripts/Build/Editor/Build.cs",
+		"/F/Projects/Video Games/Sonic 2D Tech demo/Assets/Game/Scripts/Build/Build.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/Interactables/ElevatorSwitch.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/CharacterInteractorBase.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Editor/CustomEditor/SpawnOptionsDrawer.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/LocalizedObject.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Alien/AlienMaster.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/DebugMenuManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/InGameManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Level/SpawnOptions.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Items/OxygenBottle.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/CharacterInteractor.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Event/Checkpoint.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Camera/CameraLockTrigger.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Util/DebugUtil.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Camera/CameraScrolling.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Event/ExitArea.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/AstronautPlayerControl.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/CharacterEnum.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_ClimbLedgeStateAnim.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Editor/HandlesUtil.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Util/GizmosUtil.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Editor/RectContainerEditor.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Input/ControllerHardwareType.cs",
+		"/C/Users/acro_/Google Drive/Crazy Monkey Studios/GGC 2 Shared/Patches/Controller multi-button display/ControllerButtonHelper_multi_button_maps_WIP.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/ControllerButtonHelper.cs",
+		"/C/Users/acro_/AppData/Local/Temp/Temp1_UnityUI.zip/UnityUI/RewiredStandaloneInputModule.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Level/LevelData.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/.gitignore",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Input/ControllerHardwareTypeData.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Input/ControllerHardwareData.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/RectContainer.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Debug/EditBoxCollider2D.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/TutorialUI.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/DialogueManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/DialogueUI.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/LanguageManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/LanguageDataHandler.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Alien/AlienLight.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Alien/AlienMotor.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/AstronautMotor.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/AstronautInteractor.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_ClimbLedgeState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_MotionState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/AstronautMaster.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Pattern/SingletonManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/CharacterMaster.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/Editor/Utility/LocalizedKeySelector.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/uGUI/Editor/LocalizedTextInspector.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalization/Scripts/LocalizedGUIText.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/DataStorage/UserDataStore_PlayerPrefs.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/TextWithSpritesEditor.cs",
+		"/C/Users/acro_/Google Drive/Crazy Monkey Studios/GGC 2 Shared/Patches/Controller multi-button display/ControllerButtonHelper_before_patch.cs",
+		"/C/Users/acro_/AppData/Local/Temp/Temp1_UnityInputOverride.zip/UnityInputOverride.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Prefabs/Events/Checkpoint.prefab.meta",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Library/AnnotationManager",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/SmartLocalizationWorkspace/Data/LanguageData/Language.resx",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_GroundedState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_CrouchedToIdleState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_IdleToCrouchedState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_CrawlState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_CrouchedState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_IdleWalkState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/TitleManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Movie/OpeningSequence.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/PlatformDependentEventSystemToggle.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_JumpingState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_AirborneState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/ToggleEvent.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Constants/UnityConstants.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Attributes/MinMaxSliderAttribute.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Editor/MinMaxSliderDrawer.cs",
+		"/F/Projects/Unity/New Unity5.5.0f3 Project/Assets/ScriptWithEditorOnlyParameter.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/SingleToggleEvent.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Hazard/ToggleFloorGateEvent.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/MultiToggleEvent.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/TestUI.cs",
+		"/F/Dropbox/Macbook_backup/comptes/regular_payments.txt",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/GameModeManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/BaseSideViewCharacterMotor.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Dynamic/MovingPlatformRoot.cs",
+		"/F/Dropbox/Bug reports/Unity/bug_unity5.5_android_any_cpu.txt",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_FallingState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Astronaut/Astronaut_ClimbLadderState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/CharacterManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Base/MasterBehaviour.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Debug/DebugScreenManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Debug/DebugScreen.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Debug/DebugVariable.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Debug/DebugText.cs",
+		"/F/Games/Level Editors/opensnc-win-0.1.4/config/samples.def",
+		"/C/Users/acro_/Home/Portable Applications/Game Development/HCGE/template/objects.def",
+		"/C/Users/acro_/Home/Portable Applications/Game Development/HCGE/template/game.def",
+		"/F/Games/Level Editors/Sonic Advance Editor v0.1/ReadMe.txt",
+		"/C/Users/acro_/Home/Portable Applications/Game Development/EF-12_Playism_Trial/TrialVersion/Documents/CreationManuals/readme.txt",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/InteractableObjectBase.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Alien/AlienControl.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/UI/PauseMenuUI.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/SideView/Characters/ControlUtil.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/PauseMenuManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Character/Alien/AlienPlayerControl.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Dynamic/Elevator_MovingState.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/UIManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/GameMode.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Dynamic/HiddenPlatform.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Constants/LayerMasks.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Dynamic/FloorGate.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/SettingsManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Managers/RewiredInputHelper.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/SideView/Characters/SideViewCharacterControl.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/Interactables/FloorGateSwitch.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Helper/Extensions.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/InteractableProximity.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/Interactables/ToggleSwitch.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Interaction/Interactables/ToggleSwitchAstronaut.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Game/Scripts/Environment/Dynamic/Elevator.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Commons/Pattern/PoolManager.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/Editor/CustomInspectors/CustomInspector_External.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/Editor/CustomInspectors/InputManagerInspector.cs",
+		"/F/Projects/Video Games/IDE 02 - Martian Coop/Unity - Martian Coop/Assets/Rewired/Internal/Scripts/InputManager.cs"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			"F:\\Projects\\Video Games\\IDE 02 - Martian Coop\\Unity - Martian Coop\\Assets,*.cs",
+			"F:\\Projects\\Video Games\\IDE 02 - Martian Coop\\Unity - Martian Coop\\Assets\\Game,*.cs",
+			"<open folders>",
+			"F:\\Projects\\Video Games\\IDE 05 - Manga-ville\\Unity - Manga-ville\\Assets\\Game,*.cs",
+			"F:\\Projects\\Video Games\\IDE 02 - Martian Coop\\Unity - Martian Coop\\Assets\\Game,*.cs",
+			"F:\\Projects\\Video Games\\IDE 02 - Martian Coop\\Unity - Martian Coop\\Assets\\Game",
+			"<open folders>",
+			"F:\\Projects\\Video Games\\IDE 05 - Manga-ville\\Unity - Manga-ville\\Assets\\unity-ui-extensions",
+			"Assets/unity-ui-extensions",
+			"/Assets/unity-ui-extensions",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dotwee",
+			"RemoveLockTriggerCandidate",
+			"AddLockTriggerCandidate",
+			"imageOffset",
+			"m_ImageInsertInfo",
+			"Load",
+			"loadedValuesDictionary",
+			"languageDataHandler",
+			"LanguageDataHandler",
+			"languageDataHandler",
+			"d",
+			"LoadedValuesDictionary",
+			"serializedKeys",
+			"LoadedValuesDictionary",
+			"handler.loa",
+			"Load(re",
+			"LoadLanguageDictionary",
+			"Load",
+			"loadedValuesDictionary",
+			"localizedText",
+			"ChangeLanguageEventHandler",
+			"GetControllerButtonSpriteName",
+			"_base",
+			"Handles",
+			"stronaut",
+			"Astronaut",
+			"astronaut",
+			"Astronaut",
+			"m_Interactor",
+			"CharacterInteractor<AstronautMotor>",
+			"CharacterInteractor<AstronautMaster>",
+			"stateBehaviour",
+			"dead",
+			"m_AstronautMotor",
+			"AstronautMotor",
+			"IsQuitting",
+			"DontDestroyOnLoadToggle",
+			"o",
+			"O",
+			"o",
+			"instance",
+			"VerboseLogging",
+			"characterstag",
+			"charactertag",
+			"togglee",
+			"toggleven",
+			"debugColor",
+			"debug",
+			"m_ZIndex",
+			"minimumViewRect",
+			"viewCenter",
+			"GetCharacterViewRect",
+			"position",
+			"m_LockTrigger",
+			"lockTrigger",
+			"int",
+			"level",
+			"int",
+			"trs",
+			"newLockTrigger",
+			"m_TargetYaw",
+			"SetTurn180",
+			"turnaccel",
+			"skim",
+			"Fall Di",
+			"Fall D",
+			"SetTrigger",
+			"damage die",
+			"StartClimbLadderFromGround",
+			"OnAirborneLeave",
+			"StartClimbLedge",
+			"startclmb",
+			"land",
+			"stopjump",
+			"lower tha",
+			"lower than",
+			"float m_grou",
+			"m_gro",
+			"m_grou\\",
+			"m_Crawling",
+			"SetCrouching",
+			"if (m_craw",
+			"astronaut]",
+			"m_IsCrouching",
+			"settrigger(\"cra",
+			"settrigger(\"cr",
+			"Grounded",
+			"StartTurn180",
+			"m_TimeSinceTurnStart",
+			"previousScene",
+			"UnloadPreviousScene",
+			"virtual",
+			"settrigger(\"Ju",
+			"velocityy",
+			"m_Animator",
+			"UpdateAnimatorVelocity",
+			"m_CrawlBackwardAccel",
+			"m_CrawlForwardAccel",
+			"m_CrawlReleaseDecel",
+			"m_CrawlBackwardAccel",
+			"m_CrawlReleaseDecel",
+			"m_ForwardAccel",
+			"crouch",
+			"Crouch",
+			"crouch",
+			"Crouch",
+			"m_TurnAccel",
+			"Crouched",
+			"m_Grounded",
+			"Jump",
+			"channel",
+			"Channel",
+			"channel",
+			"ShowDebugVariable",
+			"IdleWalkState",
+			"m_IsInStateTransition",
+			"m_HasJumped",
+			"m_hasju",
+			"jump",
+			"collider",
+			"jump",
+			"Crouch",
+			"Jump",
+			"jump",
+			"Jump",
+			"CrouchState",
+			"Crouch",
+			"CrouchedState"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"GameModeManager.Instance.SetInputMap",
+			"\t\n",
+			"reader.GetAttribute",
+			"experimentElement.GetAttribute"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "",
+	"project": "wavefighters.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vecuti",
+				"Unity - Martian Coop\\Assets\\Commons\\Helper\\Util\\VectorUtil.cs"
+			],
+			[
+				"mathut",
+				"Unity - Martian Coop\\Assets\\Commons\\Helper\\Util\\MathUtil.cs"
+			],
+			[
+				"devsta",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Build\\DevelopmentStage.cs"
+			],
+			[
+				"builddat",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Build\\BuildData.cs"
+			],
+			[
+				"build",
+				"Unity - Martian Coop\\Assets\\Game\\Editor\\BuildPipeline\\Build.cs"
+			],
+			[
+				"alienlight",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienLight.cs"
+			],
+			[
+				"playercontr",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienPlayerControl.cs"
+			],
+			[
+				"astroncontr",
+				"F:\\Projects\\Video Games\\IDE 02 - Martian Coop\\Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautControl.cs"
+			],
+			[
+				"camloctrig",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Camera\\CameraLockTrigger.cs"
+			],
+			[
+				"langmana",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\LanguageManager.cs"
+			],
+			[
+				"localizete",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Locale\\Editor\\LocalizeTextInspector.cs"
+			],
+			[
+				"tutora",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\UI\\TutorialUI.cs"
+			],
+			[
+				"loceliinpec",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\uGUI\\Editor\\LocalizedTextInspector.cs"
+			],
+			[
+				"localitextinspe",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\uGUI\\Editor\\LocalizedTextInspector.cs"
+			],
+			[
+				"lamana",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\LanguageManager.cs"
+			],
+			[
+				".git",
+				"Unity - Martian Coop\\.gitignore"
+			],
+			[
+				"levelda",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Level\\LevelData.cs"
+			],
+			[
+				"receditor",
+				"Unity - Martian Coop\\Assets\\Commons\\Helper\\Editor\\RectContainerEditor.cs"
+			],
+			[
+				"editboxco",
+				"Unity - Martian Coop\\Assets\\Commons\\Debug\\EditBoxCollider2D.cs"
+			],
+			[
+				"spawndraw",
+				"Unity - Martian Coop\\Assets\\Game\\Editor\\CustomEditor\\SpawnOptionsDrawer.cs"
+			],
+			[
+				"alienmas",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMaster.cs"
+			],
+			[
+				"astromas",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMaster.cs"
+			],
+			[
+				"single",
+				"Unity - Martian Coop\\Assets\\Commons\\Pattern\\SingletonManager.cs"
+			],
+			[
+				"alienmotor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMotor.cs"
+			],
+			[
+				"astronautmaster",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMaster.cs"
+			],
+			[
+				"charam",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\CharacterMaster.cs"
+			],
+			[
+				"languaman",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\LanguageManager.cs"
+			],
+			[
+				"lanmana",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\LanguageManager.cs"
+			],
+			[
+				"lanman",
+				"Unity - Martian Coop\\Library\\AnnotationManager"
+			],
+			[
+				"uimana",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\UIManager.cs"
+			],
+			[
+				"checkpoin",
+				"Unity - Martian Coop\\Assets\\Game\\Prefabs\\Events\\Checkpoint.prefab.meta"
+			],
+			[
+				"daloguema",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\DialogueManager.cs"
+			],
+			[
+				"dialoui",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\UI\\DialogueUI.cs"
+			],
+			[
+				"magenera",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\ManagerGenerator.cs"
+			],
+			[
+				"interactor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\CharacterInteractor.cs"
+			],
+			[
+				"chek",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Event\\Checkpoint.cs"
+			],
+			[
+				"tutorita",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\UI\\TutorialTrigger.cs"
+			],
+			[
+				"checkpo",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Event\\Checkpoint.cs"
+			],
+			[
+				"camelocktr",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Camera\\CameraLockTrigger.cs"
+			],
+			[
+				"checkp",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Event\\Checkpoint.cs"
+			],
+			[
+				"localizedtext",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\uGUI\\Editor\\LocalizedTextInspector.cs"
+			],
+			[
+				"togglee",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Interaction\\ToggleEvent.cs"
+			],
+			[
+				"check",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Event\\Checkpoint.cs"
+			],
+			[
+				"recteditor",
+				"Unity - Martian Coop\\Assets\\Commons\\Helper\\Editor\\RectContainerEditor.cs"
+			],
+			[
+				"camscrolli",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Camera\\CameraScrolling.cs"
+			],
+			[
+				"asmotor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMotor.cs"
+			],
+			[
+				"cascro",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Camera\\CameraScrolling.cs"
+			],
+			[
+				"astromotor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMotor.cs"
+			],
+			[
+				"astronautmotor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMotor.cs"
+			],
+			[
+				"astronautpla",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautPlayerControl.cs"
+			],
+			[
+				"crawlst",
+				"F:\\Projects\\Video Games\\IDE 02 - Martian Coop\\Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrawlState.cs"
+			],
+			[
+				"titlman",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\TitleManager.cs"
+			],
+			[
+				"unitycon",
+				"Unity - Martian Coop\\Assets\\Game\\Constants\\UnityConstants.cs"
+			],
+			[
+				"title",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\TitleManager.cs"
+			],
+			[
+				"unitycons",
+				"Unity - Martian Coop\\Assets\\Game\\Constants\\UnityConstants.cs"
+			],
+			[
+				"opening",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Movie\\OpeningSequence.cs"
+			],
+			[
+				"rectcontainer",
+				"Unity - Martian Coop\\Assets\\Commons\\Helper\\Editor\\RectContainerEditor.cs"
+			],
+			[
+				"astrointer",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautInteractor.cs"
+			],
+			[
+				"scrolling",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Camera\\CameraScrolling.cs"
+			],
+			[
+				"idle",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_IdleWalkState.cs"
+			],
+			[
+				"groundst",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_GroundedState.cs"
+			],
+			[
+				"jumpsta",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_JumpingState.cs"
+			],
+			[
+				"airbo",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_AirborneState.cs"
+			],
+			[
+				"astrmotor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMotor.cs"
+			],
+			[
+				"crouchedtoi",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrouchedToIdleState.cs"
+			],
+			[
+				"idletoc",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_IdleToCrouchedState.cs"
+			],
+			[
+				"crawlsta",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrawlState.cs"
+			],
+			[
+				"crouch",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrouchedState.cs"
+			],
+			[
+				"ground",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_GroundedState.cs"
+			],
+			[
+				"crawl",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrawlState.cs"
+			],
+			[
+				"climbladdera",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_ClimbLadderState.cs"
+			],
+			[
+				"titlema",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\TitleManager.cs"
+			],
+			[
+				"masterbe",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Base\\MasterBehaviour.cs"
+			],
+			[
+				"charmas",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\CharacterMaster.cs"
+			],
+			[
+				"fallin",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_FallingState.cs"
+			],
+			[
+				"jumpst",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_JumpingState.cs"
+			],
+			[
+				"airborn",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_AirborneState.cs"
+			],
+			[
+				"astrcrouc",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrouchedState.cs"
+			],
+			[
+				"crouched",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrouchedState.cs"
+			],
+			[
+				"idlewa",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_IdleWalkState.cs"
+			],
+			[
+				"playercon",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautPlayerControl.cs"
+			],
+			[
+				"debugtex",
+				"Unity - Martian Coop\\Assets\\Commons\\Debug\\DebugText.cs"
+			],
+			[
+				"debugtext",
+				"Unity - Martian Coop\\Assets\\Commons\\Debug\\DebugText.cs"
+			],
+			[
+				"devaria",
+				"Unity - Martian Coop\\Assets\\Commons\\Debug\\DebugVariable.cs"
+			],
+			[
+				"debugscreen",
+				"Unity - Martian Coop\\Assets\\Commons\\Debug\\DebugScreen.cs"
+			],
+			[
+				"debugsc",
+				"Unity - Martian Coop\\Assets\\Commons\\Debug\\DebugScreenManager.cs"
+			],
+			[
+				"idlewal",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_IdleWalkState.cs"
+			],
+			[
+				"astronautcrouch",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_CrouchState.cs"
+			],
+			[
+				"astronautstate",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\Astronaut_GroundedState.cs"
+			],
+			[
+				"astronautplayer",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautPlayerControl.cs"
+			],
+			[
+				"astrcontro",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautControl.cs"
+			],
+			[
+				"ingame",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\InGameManager.cs"
+			],
+			[
+				"charman",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\CharacterManager.cs"
+			],
+			[
+				"ingam",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\InGameManager.cs"
+			],
+			[
+				"asmoto",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMotor.cs"
+			],
+			[
+				"camersc",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Camera\\CameraScrolling.cs"
+			],
+			[
+				"elemov",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Environment\\Dynamic\\Elevator_MovingState.cs"
+			],
+			[
+				"pauseui",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\UI\\PauseMenuUI.cs"
+			],
+			[
+				"ingamema",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\InGameManager.cs"
+			],
+			[
+				"pausema",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\PauseMenuManager.cs"
+			],
+			[
+				"openingse",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Movie\\OpeningSequence.cs"
+			],
+			[
+				"ingamem",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\InGameManager.cs"
+			],
+			[
+				"pauseme",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\PauseMenuManager.cs"
+			],
+			[
+				"hiddenpla",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Environment\\Dynamic\\HiddenPlatform.cs"
+			],
+			[
+				"astromoto",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Astronaut\\AstronautMotor.cs"
+			],
+			[
+				"",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMotor.cs"
+			],
+			[
+				"aliencontr",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienControl.cs"
+			],
+			[
+				"alilight",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienLight.cs"
+			],
+			[
+				"motor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMotor.cs"
+			],
+			[
+				"alinemot",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMotor.cs"
+			],
+			[
+				"alienli",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienLight.cs"
+			],
+			[
+				"magene",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\ManagerGenerator.cs"
+			],
+			[
+				"opensequenc",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Movie\\OpeningSequence.cs"
+			],
+			[
+				"gamemodema",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\GameModeManager.cs"
+			],
+			[
+				"managen",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\ManagerGenerator.cs"
+			],
+			[
+				"inputmanager",
+				"Unity - Martian Coop\\Assets\\Rewired\\Internal\\Scripts\\Editor\\CustomInspectors\\InputManagerInspector.cs"
+			],
+			[
+				"mgen",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\ManagerGenerator.cs"
+			],
+			[
+				"magener",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Managers\\ManagerGenerator.cs"
+			],
+			[
+				"locinsp",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\uGUI\\Editor\\LocalizedTextInspector.cs"
+			],
+			[
+				"loinspec",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\Editor\\InspectorScripts.meta"
+			],
+			[
+				"locaedi",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\uGUI\\Editor\\LocalizedTextInspector.cs"
+			],
+			[
+				"localized",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\uGUI\\LocalizedText.cs"
+			],
+			[
+				"smartloca",
+				"Unity - Martian Coop\\Assets\\SmartLocalization\\Scripts\\Editor\\EditorWindows\\SmartLocalizationWindow.cs"
+			],
+			[
+				"alieplay",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienPlayerControl.cs"
+			],
+			[
+				"alieli",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienLight.cs"
+			],
+			[
+				"aliemotor",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienMotor.cs"
+			],
+			[
+				"aliencon",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienControl.cs"
+			],
+			[
+				"aliplacon",
+				"Unity - Martian Coop\\Assets\\Game\\Scripts\\Character\\Alien\\AlienPlayerControl.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "manga",
+		"selected_items":
+		[
+			[
+				"manga",
+				"F:\\Projects\\Video Games\\IDE 05 - Manga-ville\\Unity - Manga-ville\\manga-ville.sublime-project"
+			],
+			[
+				"bluean",
+				"F:\\Projects\\Video Games\\01 - Blue and Red\\Unity - Blue and Red\\BlueAndRed.sublime-project"
+			],
+			[
+				"",
+				"F:\\Projects\\Video Games\\StairlessTower 4.13\\stairless-tower.sublime-project"
+			],
+			[
+				"stai",
+				"F:\\Projects\\Video Games\\StairlessTower 4.13\\stairless-tower.sublime-project"
+			],
+			[
+				"web",
+				"C:\\Users\\acro_\\OneDrive\\Websites\\Webfaction\\Portfolio\\portfolio.sublime-project"
+			],
+			[
+				"stair",
+				"F:\\Projects\\Video Games\\StairlessTower 4.13\\stairless-tower.sublime-project"
+			],
+			[
+				"stea",
+				"F:\\Projects\\Video Games\\stealth-unity\\Stealth-Unity.sublime-project"
+			],
+			[
+				"stairle",
+				"F:\\Projects\\Video Games\\StairlessTower 4.13\\stairless-tower.sublime-project"
+			],
+			[
+				"steal",
+				"F:\\Projects\\Video Games\\stealth-unity\\Stealth-Unity.sublime-project"
+			],
+			[
+				"stairless",
+				"F:\\Projects\\Video Games\\StairlessTower 4.13\\stairless-tower.sublime-project"
+			],
+			[
+				"asmotor",
+				"C:\\Users\\acro_\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\Projects\\Unity - Martian Coop.sublime-workspace"
+			],
+			[
+				"ahk",
+				"F:\\Developer\\AutoHotKey\\ahk.sublime-project"
+			],
+			[
+				"port",
+				"F:\\Projects\\Web\\Webfaction\\Portfolio\\portfolio.sublime-project"
+			],
+			[
+				"mang",
+				"F:\\Projects\\Video Games\\IDE 05 - Manga-ville\\Unity - Manga-ville\\manga-ville.sublime-project"
+			],
+			[
+				"man",
+				"F:\\Projects\\Video Games\\IDE 05 - Manga-ville\\Unity - Manga-ville\\manga-ville.sublime-project"
+			]
+		],
+		"width": 461.0
+	},
+	"select_symbol":
+	{
+		"height": 58.0,
+		"last_filter": "drawbox",
+		"selected_items":
+		[
+			[
+				"drawbox",
+				"DrawLocalBox2D"
+			],
+			[
+				"notifyc",
+				"NotifyCrouched"
+			],
+			[
+				"movecraw",
+				"MoveCrawling"
+			],
+			[
+				"spawnas",
+				"SpawnAstronaut"
+			],
+			[
+				"spawn",
+				"SpawnAstronaut"
+			],
+			[
+				"spawna",
+				"SpawnAstronaut"
+			],
+			[
+				"fixedupd",
+				"FixedUpdate"
+			],
+			[
+				"movegrou",
+				"MoveGround"
+			],
+			[
+				"jumpin",
+				"jumpIntention"
+			],
+			[
+				"consi",
+				"ConsumeJumpIntention"
+			],
+			[
+				"consume",
+				"ConsumeActionInput"
+			],
+			[
+				"rever",
+				"ReverseDirection"
+			],
+			[
+				"reverse",
+				"ReverseDirection"
+			],
+			[
+				"turn",
+				"SetTurn180"
+			],
+			[
+				"open",
+				"Open"
+			],
+			[
+				"warpe",
+				"WarpAlienToAstronaut"
+			],
+			[
+				"warpto",
+				"WarpToTargetPosition"
+			],
+			[
+				"drawlo",
+				"DrawLocalLine"
+			],
+			[
+				"detect",
+				"DetectInteractable"
+			],
+			[
+				"contain",
+				"Contains"
+			],
+			[
+				"isdead",
+				"isDead"
+			],
+			[
+				"caninte",
+				"CheckCanInteract"
+			],
+			[
+				"giveoxy",
+				"GiveOxygenBottle"
+			],
+			[
+				"isinus",
+				"IsInUse"
+			],
+			[
+				"setupde",
+				"SetupDebugMenu"
+			],
+			[
+				"unityva",
+				"UnityVariable"
+			],
+			[
+				"revealp",
+				"revealPowerLevel"
+			],
+			[
+				"popup",
+				"Popup"
+			],
+			[
+				"pausega",
+				"PauseGame"
+			],
+			[
+				"pausegam",
+				"PauseGamePhysics"
+			],
+			[
+				"pausegamep",
+				"PauseGamePhysics"
+			],
+			[
+				"die",
+				"Die"
+			],
+			[
+				"moveair",
+				"MoveAir"
+			],
+			[
+				"isdia",
+				"IsDialogueActive"
+			],
+			[
+				"ispause",
+				"IsPauseMenuActive"
+			],
+			[
+				"oxygend",
+				"OxygenDie"
+			],
+			[
+				"notif",
+				"Notify"
+			],
+			[
+				"oxygendi",
+				"OxygenDie"
+			],
+			[
+				"movela",
+				"MoveLadder"
+			],
+			[
+				"drawlocal",
+				"DrawLocalLine"
+			],
+			[
+				"drawbo",
+				"DrawBounds"
+			],
+			[
+				"debug2d",
+				"DebugBounds2D"
+			],
+			[
+				"debugbo",
+				"DebugBounds2D"
+			],
+			[
+				"drawbou",
+				"DrawBounds2D"
+			],
+			[
+				"debugbou",
+				"DebugBounds"
+			],
+			[
+				"drawb",
+				"DrawBounds"
+			],
+			[
+				"drbou",
+				"DrawBounds"
+			],
+			[
+				"resampl",
+				"ResampleInSpace"
+			],
+			[
+				"calcs",
+				"CalcStartUnitVector"
+			],
+			[
+				"calcst",
+				"CalcStartUnitVector"
+			],
+			[
+				"selectable",
+				"UISelectableExtension"
+			],
+			[
+				"kanjiren",
+				"KanjiRenderer"
+			],
+			[
+				"buil",
+				"Build"
+			]
+		],
+		"width": 784.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 381.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
