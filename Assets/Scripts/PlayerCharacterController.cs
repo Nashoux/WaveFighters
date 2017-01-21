@@ -8,7 +8,12 @@ public class PlayerCharacterController : MonoBehaviour {
 
 	/* Parameters */
 
+	[Tooltip("Player number, 1 for left and 2 for right")]
 	public int player = 1;
+
+	[Tooltip("-1 to face left, 1 to face right")]
+	public int directionSign = 1;
+
 	[SerializeField] float speed = 6f;
 	public Vector2 moveRange = new Vector2(-10f, 10f);
 
@@ -17,10 +22,20 @@ public class PlayerCharacterController : MonoBehaviour {
 	/* State */
 
 	float verticalMoveIntent;
-	public float lastInput = 1f;
+	float lastVerticalMove;
+	public float LastVerticalMove { get { return lastVerticalMove; } }
 
 	void Awake () {
 		rigidbody = GetComponent<Rigidbody>();
+	}
+
+	void Start () {
+		Setup();
+	}
+
+	public void Setup () {
+		verticalMoveIntent = 0f;
+		lastVerticalMove = 0f;
 	}
 
 	void Update () {
@@ -73,6 +88,8 @@ public class PlayerCharacterController : MonoBehaviour {
 			newPosition.y = Mathf.Clamp(newPosition.y, moveRange[0], moveRange[1]);
 			rigidbody.MovePosition(newPosition);
 		}
+
+		lastVerticalMove = verticalMoveIntent;
 	}
 
 }

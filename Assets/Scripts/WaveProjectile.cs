@@ -46,7 +46,7 @@ public class WaveProjectile : MonoBehaviour {
 		timer -= Time.deltaTime;
 		if (timer <= 0) {
 			timer = 0.35f;
-			GameObject creation = Instantiate (Resources.Load<GameObject> ("Prefab/GGJ_projectile3G"), transform.position,transform.rotation);
+			GameObject creation = Instantiate (Resources.Load<GameObject> ("Prefab/GGJ_projectile3G"), transform.position, transform.rotation);
 		}
 
 	}
