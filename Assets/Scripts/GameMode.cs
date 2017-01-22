@@ -7,6 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class GameMode : MonoBehaviour {
 
+	float timerfin = 2;
+
+	[SerializeField]
+	GameObject player1win;
+	[SerializeField]
+	GameObject player2win;
+
+
 	public float pointJ1 = 0;
 	public float pointJ2 = 0;
 	public float pointEnCour = 1; 
@@ -21,22 +29,60 @@ public class GameMode : MonoBehaviour {
 
 
 	void Start(){
+
+		player1win.SetActive(false);
+		player2win.SetActive(false);
+
 		spawnPointJ1 = GameObject.Find ("Character1").transform.position;
 		spawnPointJ2 = GameObject.Find ("Character2").transform.position;
 	}
 
 	void Update(){
+		
 		textJ1.text = "Score j1   " + pointJ1;
 		textJ2.text = "Score j2   " + pointJ2;
 
-		// exit on escape
+
+		if (pointJ1 >= 5) {
+			timerfin -= Time.deltaTime;
+			player1win.SetActive (true);
+
+		} else {
+			player1win.SetActive(false);
+		}
+
+		if (pointJ2 >= 5) {
+			timerfin -= Time.deltaTime;
+			player1win.SetActive (false);
+
+
+		} else {
+			player2win.SetActive(false);
+		}
+
+		if (timerfin <0 && Input.anyKeyDown) {
+
+			timerfin = 1;
+			GameObject.Find ("Character1").GetComponent<CharacterLife> ().life = 3;
+			GameObject.Find ("Character1").GetComponent<CharacterLife> ().lifebefore = 3;
+
+			GameObject.Find ("Character2").GetComponent<CharacterLife> ().life = 3;
+			GameObject.Find ("Character2").GetComponent<CharacterLife> ().lifebefore = 3;
+
+			pointJ1 = 0;
+			pointJ2 = 0;
+		}
+
+				// exit on escape
 		if (Input.GetKeyDown(KeyCode.Escape))
 			ExitInGame();
+
 	}
 
 	void ExitInGame() {
 		SceneManager.LoadScene(0);
 	}
+
 
 	public void ResetAfterScoring(){
 
