@@ -30,3 +30,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+
+# Custom
+/fmod_editor.log
