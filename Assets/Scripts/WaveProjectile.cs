@@ -6,6 +6,10 @@ public class WaveProjectile : MonoBehaviour {
 
 	new Rigidbody rigidbody;
 
+	FMOD.Studio.EventInstance sonImpact;
+	FMOD.Studio.EventInstance tap;
+
+
 	/* Spawn parameters */
 
 	/// Speed in m/s
@@ -25,6 +29,10 @@ public class WaveProjectile : MonoBehaviour {
 
 	void Awake () {
 		rigidbody = GetComponent<Rigidbody>();
+		sonImpact = FMODUnity.RuntimeManager.CreateInstance ("event:/Impact"); 
+		sonImpact = FMODUnity.RuntimeManager.CreateInstance ("event:/tapMur"); 
+
+
 	}
 
 	public void Setup (int initialSpeed = 5, int initialBounces = 2) {
@@ -54,6 +62,8 @@ public class WaveProjectile : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 
 		if (col.gameObject.tag == "Wall") {
+
+			tap.start ();
 
 			lastWallHit = col.collider;
 
@@ -91,6 +101,7 @@ public class WaveProjectile : MonoBehaviour {
 
 			if (col.gameObject.GetComponent<CharacterLife> ()) {
 				col.gameObject.GetComponent<CharacterLife> ().life--;
+				sonImpact.start ();
 				Destroy (this.gameObject);
 			}
 		}if (col.gameObject.tag == "DeadZone") {
@@ -98,7 +109,7 @@ public class WaveProjectile : MonoBehaviour {
 		}
 	}
 
-	void AlignWithDirection() {
+ 	void AlignWithDirection() {
 //		rigidbody.rotation = Quaternion.FromToRotation(Vector3.right, direction);  // 1 frame late
 		transform.rotation = Quaternion.FromToRotation(Vector3.right, currentDirection);
 	}
