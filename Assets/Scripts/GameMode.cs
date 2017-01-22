@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameMode : MonoBehaviour {
+
+	float timerfin = 2;
+
+	[SerializeField]
+	GameObject player1win;
+	[SerializeField]
+	GameObject player2win;
+
 
 	public float pointJ1 = 0;
 	public float pointJ2 = 0;
@@ -20,6 +29,10 @@ public class GameMode : MonoBehaviour {
 
 
 	void Start(){
+
+		player1win.SetActive(false);
+		player2win.SetActive(false);
+
 		spawnPointJ1 = GameObject.Find ("Character1").transform.position;
 		spawnPointJ2 = GameObject.Find ("Character2").transform.position;
 	}
@@ -28,6 +41,37 @@ public class GameMode : MonoBehaviour {
 		
 		textJ1.text = "Score j1   " + pointJ1;
 		textJ2.text = "Score j2   " + pointJ2;
+
+
+		if (pointJ1 >= 5) {
+			timerfin -= Time.deltaTime;
+			player1win.SetActive (true);
+
+		} else {
+			player1win.SetActive(false);
+		}
+
+		if (pointJ2 >= 5) {
+			timerfin -= Time.deltaTime;
+			player1win.SetActive (false);
+
+
+		} else {
+			player2win.SetActive(false);
+		}
+
+		if (timerfin <0 && Input.anyKeyDown) {
+
+			timerfin = 1;
+			GameObject.Find ("Character1").GetComponent<CharacterLife> ().life = 3;
+			GameObject.Find ("Character1").GetComponent<CharacterLife> ().lifebefore = 3;
+
+			GameObject.Find ("Character2").GetComponent<CharacterLife> ().life = 3;
+			GameObject.Find ("Character2").GetComponent<CharacterLife> ().lifebefore = 3;
+
+			pointJ1 = 0;
+			pointJ2 = 0;
+		}
 
 	}
 
