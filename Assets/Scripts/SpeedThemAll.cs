@@ -21,7 +21,7 @@ public class SpeedThemAll : MonoBehaviour {
 
 		if (!enteredGameObject.Contains(col.gameObject)) {
 			enteredGameObject.Add (col.gameObject);
-			col.gameObject.GetComponent<WaveProjectile>().SpeedUp();
+			col.gameObject.GetComponent<WaveProjectile>().MultiplySpeed(2.5f);
 			}
 
 	}
@@ -29,7 +29,7 @@ public class SpeedThemAll : MonoBehaviour {
 
 		if (enteredGameObject.Contains(col.gameObject)) {
 			enteredGameObject.Remove(col.gameObject);
-			col.gameObject.GetComponent<WaveProjectile>().SlowDown();
+			col.gameObject.GetComponent<WaveProjectile>().MultiplySpeed(1/2.5f);
 		}
 
 

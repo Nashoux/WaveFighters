@@ -148,13 +148,8 @@ public class WaveProjectile : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
-	public void SlowDown ()	{
-		speed /= 3f;
-		rigidbody.velocity = rigidbody.velocity.normalized * speed;
-	}
-
-	public void SpeedUp () {
-		speed *= 3f;
+	public void MultiplySpeed (float factor)	{
+		speed *= factor;
 		rigidbody.velocity = rigidbody.velocity.normalized * speed;
 	}
 
