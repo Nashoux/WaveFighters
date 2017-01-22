@@ -55,9 +55,9 @@ public class CharacterLife : MonoBehaviour {
 				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
 				healthBar3.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
 			} if (fillamount < 1) {
-				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwenaCassee");
+				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer1Cassee");
 			} if (fillamount < 0.5F) {
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwenaCassee");
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer1Cassee");
 			}
 		}if(GetComponent<PlayerCharacterController>().player == 2){
 			if (fillamount >= 1) {
@@ -65,9 +65,9 @@ public class CharacterLife : MonoBehaviour {
 				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
 				healthBar3.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
 			}if (fillamount < 1) {
-				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdeanCassee");
+				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer2Cassee");
 			}if (fillamount < 0.5F) {
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdeanCassee");
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer2Cassee");
 			}
 		}
 

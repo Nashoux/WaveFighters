@@ -30,7 +30,7 @@ public class WaveProjectile : MonoBehaviour {
 	void Awake () {
 		rigidbody = GetComponent<Rigidbody>();
 		sonImpact = FMODUnity.RuntimeManager.CreateInstance ("event:/Impact"); 
-		sonImpact = FMODUnity.RuntimeManager.CreateInstance ("event:/tapMur"); 
+		tap = FMODUnity.RuntimeManager.CreateInstance ("event:/tapMur"); 
 
 
 	}
