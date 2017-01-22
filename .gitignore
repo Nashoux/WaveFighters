@@ -33,4 +33,5 @@ sysinfo.txt
 
 
 # Custom
-/fmod_editor.log
+*.log
+FmodWaves/.cache/
