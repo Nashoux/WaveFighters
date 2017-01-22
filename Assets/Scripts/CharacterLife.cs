@@ -6,11 +6,19 @@ using UnityEngine.UI;
 public class CharacterLife : MonoBehaviour {
 
 	public float life = 3;
-
+	public float lifebefore = 3;
 	GameMode gameMode;
 
+	float timerbase =0.8f;
+	float timer = 0.8f;
+
 	[SerializeField]
-	private Image healthBar;
+	private Image healthBar1;
+	[SerializeField]
+	private Image healthBar2;
+	[SerializeField]
+	private Image healthBar3;
+
 
 	float fillamount = 1;
 
@@ -26,23 +34,60 @@ public class CharacterLife : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (lifebefore == life) {
+			if (GetComponent<PlayerCharacterController> ().player == 1) {
+				gameObject.tag = "Joueur1";
+				gameObject.layer = 8;
+
+			}
+			if (GetComponent<PlayerCharacterController> ().player == 2) {
+				gameObject.tag = "Joueur2";
+				gameObject.layer = 9;
+
+			}
+		}
+
 		fillamount = 0.34f * life;
 
-		if (fillamount > 1) {
-			healthBar.color = new Color (0.2f, 0.9f, 0.2f);
-		}else if (fillamount > 0.5f) {
-			healthBar.color = new Color (0.9f, 0.6f, 0.2f);
-		}else if (fillamount > 0.2f) {
-			healthBar.color = new Color (0.9f, 0.1f, 0.1f);
-
+		if(GetComponent<PlayerCharacterController>().player == 1){
+			if (fillamount >= 1) {
+				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
+				healthBar3.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
+			} if (fillamount < 1) {
+				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwenaCassee");
+			} if (fillamount < 0.5F) {
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwenaCassee");
+			}
+		}if(GetComponent<PlayerCharacterController>().player == 2){
+			if (fillamount >= 1) {
+				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
+				healthBar3.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
+			}if (fillamount < 1) {
+				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdeanCassee");
+			}if (fillamount < 0.5F) {
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdeanCassee");
+			}
 		}
 
 
-		healthBar.fillAmount = fillamount;
+		if (lifebefore > life) {
+			gameObject.tag = "Wall";
+			gameObject.layer = 13;
+
+			timer -= Time.deltaTime;
+
+			if (timer <= 0) {
+				lifebefore = life;
+				timer = timerbase;
+			}
+		}
+
+
 
 
 		var wantedPos = Camera.main.WorldToScreenPoint (transform.position);
-		healthBar.gameObject.transform.position = new Vector3 (wantedPos.x,wantedPos.y + 25 ,wantedPos.z) ;
 
 
 		if (life <= 0) {

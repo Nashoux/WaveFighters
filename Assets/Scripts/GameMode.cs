@@ -26,8 +26,8 @@ public class GameMode : MonoBehaviour {
 
 	void Update(){
 		
-		textJ1.text = "Score j1 : " + pointJ1;
-		textJ2.text = "Score j2 : " + pointJ2;
+		textJ1.text = "Score j1   " + pointJ1;
+		textJ2.text = "Score j2   " + pointJ2;
 
 	}
 
@@ -52,7 +52,10 @@ public class GameMode : MonoBehaviour {
 				}
 			}
 			GameObject.Find ("Character1").GetComponent<CharacterLife> ().life = 3;
+			GameObject.Find ("Character1").GetComponent<CharacterLife> ().lifebefore = 3;
+
 			GameObject.Find ("Character2").GetComponent<CharacterLife> ().life = 3;
+			GameObject.Find ("Character2").GetComponent<CharacterLife> ().lifebefore = 3;
 			pointEnCour++;
 		}
 
