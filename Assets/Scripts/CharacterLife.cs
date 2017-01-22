@@ -67,7 +67,7 @@ public class CharacterLife : MonoBehaviour {
 			}if (fillamount < 1) {
 				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer2Cassee");
 			}if (fillamount < 0.5F) {
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdeanCassee");
+				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer2Cassee");
 			}
 		}
 

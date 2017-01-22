@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaveProjectile : MonoBehaviour {
 
 	new Rigidbody rigidbody;
+	new Collider collider;
 
 	FMOD.Studio.EventInstance sonImpact;
 	FMOD.Studio.EventInstance tap;
@@ -20,6 +21,8 @@ public class WaveProjectile : MonoBehaviour {
 
 	float timer = 0.35f;
 
+	public float colliderDeactivationTime = 0.1f;
+
 	/* State */
 
 	Vector3 currentDirection;
@@ -27,8 +30,11 @@ public class WaveProjectile : MonoBehaviour {
 	/// Collider of the last wall hit by this projectile
 	Collider lastWallHit;
 
+	float timeUntilReactivation;
+
 	void Awake () {
 		rigidbody = GetComponent<Rigidbody>();
+		collider = GetComponent<Collider>();
 		sonImpact = FMODUnity.RuntimeManager.CreateInstance ("event:/Impact"); 
 		tap = FMODUnity.RuntimeManager.CreateInstance ("event:/tapMur"); 
 	}
@@ -38,6 +44,7 @@ public class WaveProjectile : MonoBehaviour {
 		bounces = initialBounces;
 
 		lastWallHit = null;
+		timeUntilReactivation = 0f;
 	}
 
 	public void Shoot (Vector3 spawnPosition, Vector2 direction) {
@@ -55,17 +62,16 @@ public class WaveProjectile : MonoBehaviour {
 			GameObject creation = Instantiate (Resources.Load<GameObject> ("Prefab/GGJ_projectile3G"), transform.position, transform.rotation);
 		}
 
+		if (timeUntilReactivation > 0) {
+			timeUntilReactivation = 0;
+			collider.enabled = true;
+		}
+
 	}
 
 	void OnCollisionEnter(Collision col) {
 
 		if (col.gameObject.tag == "Wall") {
-
-			tap.start ();
-
-			lastWallHit = col.collider;
-
-			DecrementBounces();
 
 			#if UNITY_EDITOR
 			// debug all contact normals
@@ -84,6 +90,12 @@ public class WaveProjectile : MonoBehaviour {
 				return;
 			}
 
+			tap.start ();
+
+			lastWallHit = col.collider;
+
+			DecrementBounces();
+
 			// apply wall reflection to velocity
 			// rigibody.velocity has already been altered by the collision
 			Vector2 u = VectorUtil.ProjectOrthogonal(- col.relativeVelocity, normal);  // along tangent
@@ -93,16 +105,24 @@ public class WaveProjectile : MonoBehaviour {
 			currentDirection = newVelocity.normalized;
 			// align object with new velocity
 			AlignWithDirection();
+
+			DeactiveColliderTemporarily();
 		}
 
-		if (col.gameObject.tag != "Untagged" && col.gameObject.tag != "Wall") {
+		else if (col.gameObject.tag == "Absorb") {
+			Die();
+		}
+
+		else if (col.gameObject.tag != "Untagged" && col.gameObject.tag != "Wall") {
 
 			if (col.gameObject.GetComponent<CharacterLife> ()) {
 				col.gameObject.GetComponent<CharacterLife> ().life--;
 				sonImpact.start ();
 				Destroy (this.gameObject);
 			}
-		}if (col.gameObject.tag == "DeadZone") {
+		}
+
+		else if (col.gameObject.tag == "DeadZone") {
 			Destroy (this.gameObject);
 		}
 	}
@@ -117,6 +137,11 @@ public class WaveProjectile : MonoBehaviour {
 		if (bounces < 0) {
 			Die();
 		}
+	}
+
+	void DeactiveColliderTemporarily () {
+		collider.enabled = false;
+		timeUntilReactivation = colliderDeactivationTime;
 	}
 
 	void Die () {
