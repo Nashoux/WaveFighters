@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -25,7 +26,8 @@ public class StartOptions : MonoBehaviour {
 	private float fastFadeIn = .01f;									//Very short fade time (10 milliseconds) to start playing music immediately without a click/glitch
 	private ShowPanels showPanels;										//Reference to ShowPanels script on UI GameObject, to show and hide panels
 
-	
+	public Button[] allButtons;
+
 	void Awake()
 	{
 		//Get a reference to ShowPanels attached to UI object
@@ -39,6 +41,11 @@ public class StartOptions : MonoBehaviour {
 	public void StartButtonClicked(int newSceneToStart)
 	{
 		sceneToStart = newSceneToStart;
+
+		// deactive other buttons to prevent doing something else during loading
+		for (int i = 0; i < allButtons.Length; ++i) {
+			allButtons[i].interactable = false;
+		}
 
 		//If changeMusicOnStart is true, fade out volume of music group of AudioMixer by calling FadeDown function of PlayMusic, using length of fadeColorAnimationClip as time. 
 		//To change fade time, change length of animation "FadeToColor"
