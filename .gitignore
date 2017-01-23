@@ -36,3 +36,4 @@ sysinfo.txt
 *.log
 FmodWaves/.cache/
 /Screenshots/
+*.sublime-workspace

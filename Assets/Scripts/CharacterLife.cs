@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CharacterLife : MonoBehaviour {
 
+	PlayerCharacterController characterController;
+
 	public float life = 3;
 	public float lifebefore = 3;
 	GameMode gameMode;
@@ -19,58 +21,51 @@ public class CharacterLife : MonoBehaviour {
 	[SerializeField]
 	private Image healthBar3;
 
-
 	float fillamount = 1;
 
+
+	/* Resources */
+
+	Sprite spriteHealthy;
+	Sprite spriteBroken;
+
 	void Awake () {
+		characterController = GetComponent<PlayerCharacterController> ();
+
 		gameMode = FindObjectOfType<GameMode>();
 		#if UNITY_EDITOR
 		if (gameMode == null) {
 			Debug.LogWarning("No Game Mode in the scene");
 		}
 		#endif
+
+		spriteHealthy = Resources.Load<Sprite> (string.Format("Sprites/GGJ_ViePlayer{0}", characterController.player));
+		spriteBroken = Resources.Load<Sprite> (string.Format("Sprites/GGJ_ViePlayer{0}Cassee", characterController.player));
+	}
+
+	void Start () {
+
 	}
 
 	// Update is called once per frame
 	void Update () {
 
 		if (lifebefore == life) {
-			if (GetComponent<PlayerCharacterController> ().player == 1) {
-				gameObject.tag = "Joueur1";
-				gameObject.layer = 8;
-
-			}
-			if (GetComponent<PlayerCharacterController> ().player == 2) {
-				gameObject.tag = "Joueur2";
-				gameObject.layer = 9;
-
-			}
+			gameObject.tag = string.Format("Joueur{0}", characterController.player);
+			gameObject.layer = 7 + characterController.player;  // P1 -> layer 8, P2 -> layer 9
 		}
 
 		fillamount = 0.34f * life;
 
-		if(GetComponent<PlayerCharacterController>().player == 1){
-			if (fillamount >= 1) {
-				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
-				healthBar3.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieSwena");
-			} if (fillamount < 1) {
-				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer1Cassee");
-			} if (fillamount < 0.5F) {
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer1Cassee");
-			}
-		}if(GetComponent<PlayerCharacterController>().player == 2){
-			if (fillamount >= 1) {
-				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
-				healthBar3.sprite = Resources.Load<Sprite> ("Sprites/GGJ_VieEdean");
-			}if (fillamount < 1) {
-				healthBar1.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer2Cassee");
-			}if (fillamount < 0.5F) {
-				healthBar2.sprite = Resources.Load<Sprite> ("Sprites/GGJ_ViePlayer2Cassee");
-			}
+		if (fillamount >= 1) {
+			healthBar1.sprite = spriteHealthy;
+			healthBar2.sprite = spriteHealthy;
+			healthBar3.sprite = spriteHealthy;
+		} if (fillamount < 1) {
+			healthBar1.sprite = spriteBroken;
+		} if (fillamount < 0.5f) {
+			healthBar2.sprite = spriteBroken;
 		}
-
 
 		if (lifebefore > life) {
 			gameObject.tag = "Wall";
@@ -84,18 +79,14 @@ public class CharacterLife : MonoBehaviour {
 			}
 		}
 
-
-
-
 		var wantedPos = Camera.main.WorldToScreenPoint (transform.position);
 
-
 		if (life <= 0) {
-			if(GetComponent<PlayerCharacterController>().player == 1){
+			if(characterController.player == 1){
 				gameMode.pointJ2++;
 				gameMode.ResetAfterScoring ();
 			}
-			if(GetComponent<PlayerCharacterController>().player == 2){
+			else {
 				gameMode.pointJ1++;
 				gameMode.ResetAfterScoring ();
 			}

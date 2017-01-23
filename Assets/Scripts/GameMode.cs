@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class GameMode : MonoBehaviour {
 
-	float timerfin = 2;
+	[SerializeField]
+	int nbManches = 3;
 
 	[SerializeField]
 	GameObject player1win;
 	[SerializeField]
 	GameObject player2win;
-
 
 	public float pointJ1 = 0;
 	public float pointJ2 = 0;
@@ -27,6 +27,7 @@ public class GameMode : MonoBehaviour {
 	[SerializeField]
 	private Text textJ2;
 
+	float timerfin = 2;
 
 	void Start(){
 
@@ -43,7 +44,7 @@ public class GameMode : MonoBehaviour {
 		textJ2.text = "Score j2   " + pointJ2;
 
 
-		if (pointJ1 >= 5) {
+		if (pointJ1 >= nbManches) {
 			timerfin -= Time.deltaTime;
 			player1win.SetActive (true);
 
@@ -51,7 +52,7 @@ public class GameMode : MonoBehaviour {
 			player1win.SetActive(false);
 		}
 
-		if (pointJ2 >= 5) {
+		if (pointJ2 >= nbManches) {
 			timerfin -= Time.deltaTime;
 			player1win.SetActive (false);
 
@@ -60,7 +61,7 @@ public class GameMode : MonoBehaviour {
 			player2win.SetActive(false);
 		}
 
-		if (timerfin <0 && Input.anyKeyDown) {
+		if (timerfin < 0 && Input.anyKeyDown) {
 
 			timerfin = 1;
 			GameObject.Find ("Character1").GetComponent<CharacterLife> ().life = 3;
@@ -74,7 +75,7 @@ public class GameMode : MonoBehaviour {
 		}
 
 				// exit on escape
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetButtonDown("Exit"))
 			ExitInGame();
 
 	}
