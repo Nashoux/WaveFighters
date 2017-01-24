@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ShowPanels : MonoBehaviour {
@@ -10,6 +11,11 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject instructionsScreen;					//Store a reference to the Game Object InstructionsScreen 
 	public GameObject controlsScreen;						//Store a reference to the Game Object ControlsScreen 
 	public GameObject stageSelectionScreen;					//Store a reference to the Game Object StageSelectionScreen 
+
+	public Selectable play;								//Store a reference to the Game Object Play
+	public Selectable instructionsNext;					//Store a reference to the Game Object Next (instructions screen)
+	public Selectable controlsNext;						//Store a reference to the Game Object Next (controls screen) 
+	public Selectable selectLevel1;						//Store a reference to the Game Object Level 1 Button (stage selection screen)
 
 	//Call this function to activate and display the Options panel during the main menu
 	public void ShowOptionsPanel()
@@ -56,6 +62,7 @@ public class ShowPanels : MonoBehaviour {
 	{
 		menuPanel.SetActive (false);
 		instructionsScreen.SetActive (true);
+		instructionsNext.Select();
 	}
 
 	// Switch from instructions to controls
@@ -63,6 +70,7 @@ public class ShowPanels : MonoBehaviour {
 	{
 		instructionsScreen.SetActive (false);
 		controlsScreen.SetActive(true);
+		controlsNext.Select();
 	}
 
 	// Switch from main menu or controls to stage selection
@@ -71,6 +79,7 @@ public class ShowPanels : MonoBehaviour {
 		if (menuPanel.activeSelf) menuPanel.SetActive (false);
 		if (controlsScreen.activeSelf) controlsScreen.SetActive (false);
 		stageSelectionScreen.SetActive(true);
+		selectLevel1.Select();
 	}
 
 	// Switch from stage selection to main menu
@@ -78,5 +87,6 @@ public class ShowPanels : MonoBehaviour {
 	{
 		stageSelectionScreen.SetActive (false);
 		menuPanel.SetActive(true);
+		play.Select();
 	}
 }

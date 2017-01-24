@@ -19,9 +19,9 @@ public class WaveProjectile : MonoBehaviour {
 	/// Number of bounces remaining
 	float bounces = 2;
 
-	float timer = 0.35f;
+	[SerializeField] float colliderDeactivationTime = 0.1f;
 
-	public float colliderDeactivationTime = 0.1f;
+	[SerializeField] float afterImageSpawnInterval = 0.2f;
 
 	/* State */
 
@@ -32,11 +32,20 @@ public class WaveProjectile : MonoBehaviour {
 
 	float timeUntilReactivation;
 
+	float afterImageTimer;
+
+
+	/* Resources */
+
+	GameObject afterImagePrefab;
+
 	void Awake () {
 		rigidbody = GetComponent<Rigidbody>();
 		collider = GetComponent<Collider>();
 		sonImpact = FMODUnity.RuntimeManager.CreateInstance ("event:/Impact"); 
 		tap = FMODUnity.RuntimeManager.CreateInstance ("event:/tapMur"); 
+
+		afterImagePrefab = Resources.Load<GameObject>("Prefab/GGJ_projectile3G");
 	}
 
 	public void Setup (int initialSpeed = 5, int initialBounces = 2) {
@@ -45,6 +54,7 @@ public class WaveProjectile : MonoBehaviour {
 
 		lastWallHit = null;
 		timeUntilReactivation = 0f;
+		afterImageTimer = afterImageSpawnInterval;
 	}
 
 	public void Shoot (Vector3 spawnPosition, Vector2 direction) {
@@ -56,22 +66,25 @@ public class WaveProjectile : MonoBehaviour {
 
 	void FixedUpdate(){
 
-		timer -= Time.deltaTime;
-		if (timer <= 0) {
-			timer = 0.35f;
-			GameObject creation = Instantiate (Resources.Load<GameObject> ("Prefab/GGJ_projectile3G"), transform.position, transform.rotation);
+		afterImageTimer -= Time.deltaTime;
+		if (afterImageTimer <= 0) {
+			afterImageTimer += afterImageSpawnInterval;
+			GameObject creation = Instantiate(afterImagePrefab, transform.position, transform.rotation);
 		}
 
 		if (timeUntilReactivation > 0) {
-			timeUntilReactivation = 0;
-			collider.enabled = true;
+			timeUntilReactivation -= Time.deltaTime;
+			if (timeUntilReactivation <= 0) {
+				timeUntilReactivation = 0;
+				collider.enabled = true;
+			}
 		}
 
 	}
 
 	void OnCollisionEnter(Collision col) {
 
-		if (col.gameObject.tag == "Wall") {
+		if (col.gameObject.tag == "Wall" && collider.enabled) {  // make sure simultaneous collisions don't create multiple reverse direction
 
 			#if UNITY_EDITOR
 			// debug all contact normals

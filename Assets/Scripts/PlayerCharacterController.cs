@@ -17,7 +17,7 @@ public class PlayerCharacterController : MonoBehaviour {
 	[SerializeField] float speed = 6f;
 	public Vector2 moveRange = new Vector2(-10f, 10f);
 
-	[SerializeField] float gamepadDeadZone = 0.1f;
+	[SerializeField] float gamepadDeadZone = 0.3f;
 
 	/* State */
 
@@ -39,19 +39,41 @@ public class PlayerCharacterController : MonoBehaviour {
 	}
 
 	void Update () {
+		// Sensitivity should be 1 or more, but beyond 72 Logicool controller starts going up continuously
+		// Dead zone may be 0.2, we add a manual dead zone anyway
+		// Gravity should be high (1000)
+
 		float gamepadVerticalInput = Input.GetAxis(string.Format("VerticalManette{0}", player));
+		float gamepadDpadVerticalInput = Input.GetAxis(string.Format("VerticalDpadManette{0}", player));
+		#if UNITY_STANDALONE_LINUX && !UNITY_EDITOR_WIN
+		float gamepadDpadVerticalInputLinuxWired = Input.GetAxis(string.Format("VerticalDpadManette{0} Linux Wired", player));
+		float gamepadDpadVerticalInputLinuxWireless = Input.GetAxis(string.Format("VerticalDpadManette{0} Linux Wireless", player));
+		#elif UNITY_STANDALONE_OSX && !UNITY_EDITOR_WIN
+		float gamepadDpadVerticalInputOSX = Input.GetAxis(string.Format("VerticalDpadManette{0} OSX", player));
+		#endif
 		float keyboardVerticalInput = Input.GetAxis(string.Format("Vertical{0}", player));
 
-		if (gamepadVerticalInput > gamepadDeadZone || keyboardVerticalInput > 0f) {
+		if (gamepadVerticalInput > gamepadDeadZone || gamepadDpadVerticalInput > gamepadDeadZone ||
+			#if UNITY_STANDALONE_LINUX && !UNITY_EDITOR_WIN
+			gamepadDpadVerticalInputLinuxWired > gamepadDeadZone || gamepadDpadVerticalInputLinuxWireless > gamepadDeadZone ||
+			#elif UNITY_STANDALONE_OSX && !UNITY_EDITOR_WIN
+			gamepadDpadVerticalInputOSX > gamepadDeadZone ||
+			#endif
+			keyboardVerticalInput > 0f) {
 			verticalMoveIntent = 1f;
 		}
-		else if (gamepadVerticalInput < - gamepadDeadZone || keyboardVerticalInput < 0f) {
+		else if (gamepadVerticalInput < - gamepadDeadZone || gamepadDpadVerticalInput < - gamepadDeadZone ||
+			#if UNITY_STANDALONE_LINUX && !UNITY_EDITOR_WIN
+			gamepadDpadVerticalInputLinuxWired < - gamepadDeadZone || gamepadDpadVerticalInputLinuxWireless < - gamepadDeadZone ||
+			#elif UNITY_STANDALONE_OSX && !UNITY_EDITOR_WIN
+			gamepadDpadVerticalInputOSX < - gamepadDeadZone ||
+			#endif
+			keyboardVerticalInput < 0f) {
 			verticalMoveIntent = -1f;
 		}
 		else {
 			verticalMoveIntent = 0f;
 		}
-
 
 //
 //		if (verticalMoveIntent > 0f && transform.position.y > -9.4f ){

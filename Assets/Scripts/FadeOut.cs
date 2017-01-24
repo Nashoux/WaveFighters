@@ -3,27 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FadeOut : MonoBehaviour {
-	// Use this for initialization
+
+	SpriteRenderer spriteRenderer;
+
+	[SerializeField] float lifeTime = 0.5f;
+
+	float remainingTime;
+
+	void Awake () {
+		spriteRenderer = GetComponent<SpriteRenderer> ();
+	}
+
 	void Start () {
-		StartCoroutine ("ColorChanging");
+		remainingTime = lifeTime;
 	}
 
-	// Update is called once per frame
+	// Update is fine for visual objects only
 	void Update () {
-
-		if (GetComponent<SpriteRenderer> ().material.color.a <= 0.05f) {
-			Destroy (this.gameObject);
+		remainingTime -= Time.deltaTime;
+		if (remainingTime <= 0) {
+			remainingTime = 0f;
 		}
-			
 
-	}
+		Color c = spriteRenderer.material.color;
+		c.a = remainingTime / lifeTime;
+		spriteRenderer.material.color = c;
 
-	IEnumerator ColorChanging() {
-		for (float f = 1f; f >= 0; f -= 0.005f) {
-			Color c = GetComponent<Renderer>().material.color;
-			c.a = f;
-			GetComponent<SpriteRenderer>().material.color = c;
-			yield return null;
+		// we could also destroy without changing color, since it won't matter anymore
+		if (remainingTime == 0f) {
+			Destroy(gameObject);
 		}
 	}
+
 }

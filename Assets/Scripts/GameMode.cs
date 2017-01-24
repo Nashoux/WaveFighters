@@ -81,6 +81,9 @@ public class GameMode : MonoBehaviour {
 	}
 
 	void ExitInGame() {
+		// FMOD BGM will be stopped automatically since it is set to Stop Event: Object Destroy
+
+		// load main menu
 		SceneManager.LoadScene(0);
 	}
 
@@ -91,6 +94,8 @@ public class GameMode : MonoBehaviour {
 			GameObject.Find ("Character1").transform.position = spawnPointJ1;
 			GameObject.Find ("Character2").transform.position = spawnPointJ2;
 
+			// destroy all objects related to player 1 and 2 (including projectiles)
+
 			if(GameObject.FindGameObjectWithTag ("Joueur1")){				
 				for (int i = 0; i < GameObject.FindGameObjectsWithTag ("Joueur1").Length; i++) {
 					if (GameObject.FindGameObjectsWithTag ("Joueur1") [i].name != "Character1") {
@@ -98,6 +103,7 @@ public class GameMode : MonoBehaviour {
 					}
 				}
 			}
+
 			if(GameObject.FindGameObjectWithTag ("Joueur2")){				
 				for (int i = 0; i < GameObject.FindGameObjectsWithTag ("Joueur2").Length; i++) {
 					if (GameObject.FindGameObjectsWithTag ("Joueur2") [i].name != "Character2") {
