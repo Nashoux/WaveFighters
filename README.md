@@ -1,6 +1,8 @@
-# WaveFighters
+# Waves Fighters
 
 This prototype was developed for the Global Game Jam 2017 at the ICAN, Paris.
+
+Download executables (Windows, OSX, Linux) or play in your browser on the [itch.io page](https://hsandt.itch.io/wavesfighters).
 
 # Technology
 
